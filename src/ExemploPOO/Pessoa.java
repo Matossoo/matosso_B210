@@ -5,14 +5,13 @@ public class Pessoa {
 	//atributos
 	private String nome;
 	private int idade;
-	private String cpf;
 	
 	
 	//construtor completo
-	public Pessoa(String nome, int idade, String cpf) {
+	public Pessoa(String nome, int idade) {
 		this.nome = nome;
 		this.idade = idade;
-		this.cpf = cpf;
+		
 	}
 
 
@@ -34,16 +33,12 @@ public class Pessoa {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-
-
-	public String getCpf() {
-		return cpf;
+	
+	public void apresentar() {
+		System.out.println("ola, meu nome é "+nome+" e tenho "+idade+" anos");
 	}
 
 
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
 	
 	//criando métodos de acesso  Getters e Setters
 	//Getters > chama o atributo	.get
