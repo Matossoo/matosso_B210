@@ -38,6 +38,6 @@ public class TesteProdutos {
 		l.exibirDados();
 		
 		
-		
+		sc.close();
 	}
 }
