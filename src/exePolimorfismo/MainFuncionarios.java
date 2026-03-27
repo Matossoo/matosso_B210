@@ -10,7 +10,7 @@ public class MainFuncionarios {
         int op;
 
         do {
-            System.out.println("\n1-Gerente 2-Vendedor 3-Programador 4-Listar 5-Folha Total 6-Buscar 0-Sair");
+            System.out.println("\n1-Gerente \n2-Vendedor \n3-Programador \n4-Listar \n5-Folha Total \n6-Buscar \n0-Sair");
             op = sc.nextInt();
             sc.nextLine();
 
