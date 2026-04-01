@@ -27,6 +27,7 @@ public class Exemplo3 {
 		
 		System.out.println("Programa finalizado.");
 
+		sc.close();
 	}
 
 }
