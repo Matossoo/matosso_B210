@@ -20,5 +20,7 @@ public class ex2 {
         }
 
         System.out.println("O sistema continua");
+        
+        sc.close();
     }
 }

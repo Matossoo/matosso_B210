@@ -26,6 +26,8 @@ public class ex1 {
 		        }
 
 		        System.out.println("O sistema continua");
+		        
+		        sc.close();
 		    }
 		}
 

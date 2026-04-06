@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class ex6 {
 
-    public static void main(String[] args) {
+    @SuppressWarnings("resource")
+	public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
@@ -24,5 +25,8 @@ public class ex6 {
         }
 
         System.out.println("O sistema continua");
+        
+        
+        sc.close();
     }
 }
