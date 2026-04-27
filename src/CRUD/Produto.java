@@ -1,4 +1,4 @@
-package CRUD;
+package crud;
 
 public class Produto {
     private int id;
