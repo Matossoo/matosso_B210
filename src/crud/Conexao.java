@@ -1,17 +1,19 @@
-package crud;
+package CRUD;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
-
 
 public class Conexao {
-		
-		private static final String url = "jdbc:mysql://localhost:3306/db_crud";
-		private static final String user = "root";
-		private static final String password = "root"; //ajuste conforme seu MySQL
-		
-		public static Connection conectar() throws SQLException{
-			return DriverManager.getConnection(url, user, password);
-		}
-	}
+    public static Connection conectar() {
+        try {
+            return DriverManager.getConnection(
+                "jdbc:mysql://localhost:3306/db_top",
+                "root",
+                "senha"
+            );
+        } catch (Exception e) {
+            System.out.println("Erro na conexão: " + e.getMessage());
+            return null;
+        }
+    }
+}
