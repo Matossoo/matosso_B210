@@ -1,44 +1,22 @@
-package banco_dados;
+package crud;
 
-public class Pessoas {
+public class Pessoa {
 
 	private int id;
 	private String nome;
 	private int idade;
-	private String cpf;
 	
-	
-		
-		
-	
-	public Pessoas(String nome, int idade, String cpf) {
-		super();
+	public Pessoa(String nome, int idade) {
 		this.nome = nome;
 		this.idade = idade;
-		this.cpf = cpf;
 	}
 
-
-
-	public Pessoas(int id, String nome, int idade, String cpf) {
+	public Pessoa(int id, String nome, int idade) {
 		this.id = id;
 		this.nome = nome;
 		this.idade = idade;
-		this.cpf = cpf;
 	}
 
-	
-	
-
-	public String getCpf() {
-		return cpf;
-	}
-
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
-
-	//Getter and setter
 	public int getId() {
 		return id;
 	}
@@ -62,11 +40,12 @@ public class Pessoas {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	
-	//Método toString
+
 	@Override
 	public String toString() {
-		return "Pessoas [id: " + id + ", nome: " + nome + ", idade: " + idade + ", cpf: "+cpf+"] ";
+		return "Pessoa [id=" + id + ", nome=" + nome + ", idade=" + idade + "]";
 	}
+	
+	
 	
 }
